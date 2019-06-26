@@ -31,8 +31,10 @@ export class Carousel extends Component {
                         activeItemIndex={this.state.activeItemIndex}
                         activePosition={'center'}
                         chevronWidth={24}
-                        rightChevron={<i className="fa fa-angle-right fa-5x" aria-hidden="true" style={{ color: '#fff' }}></i>}
-                        leftChevron={<i className="fa fa-angle-left fa-5x" aria-hidden="true" style={{ color: '#fff' }}></i>}
+                        rightChevron={'>'}
+                        leftChevron={'<'}
+                        // rightChevron={<i className="fa fa-angle-right fa-5x" aria-hidden="true" style={{ color: '#fff' }}></i>}
+                        // leftChevron={<i className="fa fa-angle-left fa-5x" aria-hidden="true" style={{ color: '#fff' }}></i>}
                         outsideChevron={false}
                     >
                         {children}
