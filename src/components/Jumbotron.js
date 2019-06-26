@@ -20,14 +20,14 @@ export const Jumbotron = ({ movie, favorites, onAddListClicked }) => (
                     <div className="jumbotron-rating">{movie.vote_average}</div>
                 </div>
                 <div className="jumbotron-buttons">
-                    <Button type="play" icon="play" onButtonPressed={() => console.log('Assistir!')}>
+                    <Button type="play" icon="play" onButtonPressed={() => console.log('Play!')}>
                         Play
                     </Button>
-                    <Button
+                    {/* <Button
                         icon={favorites.filter(l => l.id === movie.id).length ? 'check' : 'plus'}
                         onButtonPressed={() => onAddListClicked(movie)}>
                         Add to Favorites
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
         </div>

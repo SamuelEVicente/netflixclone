@@ -24,12 +24,12 @@ export const MovieCard = ({ movie, favorites, onAddListClicked }) => (
                 <div className="movie-card-description">{movie.overview ? movie.overview.substring(0, TRUNCATE_LENGTH) + '...' : 'This movie does not have a description yet'}</div>
             </div>
             <div className="movie-card-button-container">
-                <Button
+                {/* <Button
                     buttonStyleOptions="round-button"
                     iconStyleOptions="fa-fw"
                     icon={favorites.filter(l => l.id === movie.id).length ? 'check' : 'plus'}
                     onButtonPressed={() => onAddListClicked(movie)}
-                />
+                /> */}
             </div>
         </div>
     </div>
