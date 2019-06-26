@@ -26,10 +26,10 @@ export class App extends React.Component {
   componentDidMount() {
     Movies.getMostPopular().then(res => this.setState({ movieJumbotron: res }))
     Movies.getInTheater().then(res => this.setState({ movies: { ...this.state.movies, latest: res } }))
-    Movies.getByGenrer('Comedy').then(res => this.setState({ movies: { ...this.state.movies, comedy: res } }))
-    Movies.getByGenrer('Animation').then(res => this.setState({ movies: { ...this.state.movies, animated: res } }))
-    Movies.getByGenrer('Science Ficton').then(res => this.setState({ movies: { ...this.state.movies, scifi: res } }))
-    Movies.getByGenrer('Horror').then(res => this.setState({ movies: { ...this.state.movies, horror: res } }))
+    Movies.getByGenre('Comedy').then(res => this.setState({ movies: { ...this.state.movies, comedy: res } }))
+    Movies.getByGenre('Animation').then(res => this.setState({ movies: { ...this.state.movies, animated: res } }))
+    Movies.getByGenre('Science Ficton').then(res => this.setState({ movies: { ...this.state.movies, scifi: res } }))
+    Movies.getByGenre('Horror').then(res => this.setState({ movies: { ...this.state.movies, horror: res } }))
   }
 
   toggleMovieInFavoriteList = movie => {
